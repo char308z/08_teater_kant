@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#splash {
+  background-image: url("splash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
