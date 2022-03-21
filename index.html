@@ -39,6 +39,9 @@
             allowfullscreen
           ></iframe>
         </div>
+        <div id="kant_splash">
+          <h1>kant</h1>
+        </div>
       </section>
       <section id="section2">
         <h2>Hvad får du?</h2>
@@ -93,6 +96,19 @@
         </div>
       </div>
     </footer>
-    <script></script>
+    <script>
+      window.addEventListener("scroll", navColor);
+      window.addEventListener("load", navColor);
+
+      function navColor() {
+        if (window.scrollY > 0) {
+          document.querySelector("header").classList.remove("nocolor");
+          document.querySelector(".button").classList.remove("nocolor_knap");
+        } else {
+          document.querySelector("header").classList.add("nocolor");
+          document.querySelector(".button").classList.add("nocolor_knap");
+        }
+      }
+    </script>
   </body>
 </html>
