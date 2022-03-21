@@ -78,6 +78,10 @@ header {
   list-style: none;
   place-items: center;
 }
+
+.toggle-btn {
+  display: none;
+}
 .flexi {
   display: flex;
   list-style: none;
@@ -292,5 +296,76 @@ footer {
     width: 250px;
     filter: drop-shadow(6px 6px 6px #4a074d);
     padding-left: 0;
+  }
+
+  /* burgermenu */
+
+  #bmenu {
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    z-index: 2;
+  }
+
+  #menu {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    background-color: #4a024c86;
+    /* padding-top: 22%; */
+    z-index: 2;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .toggle-btn {
+    background: transparent;
+    color: #333;
+    border: none;
+    display: block;
+    min-width: 50px;
+    min-height: 40px;
+    font-size: 4rem;
+    cursor: pointer;
+    margin: 2%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding-top: 52%;
+  }
+
+  nav ul a {
+    display: flex;
+    justify-content: center;
+    color: #fffef2;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5%;
+    cursor: pointer;
+  }
+
+  #bmenu:hover {
+    transform: scale(1.05);
   }
 }
