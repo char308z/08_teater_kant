@@ -5,6 +5,35 @@
 img {
   width: 100%;
 }
+h1 {
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.3px;
+}
 
 .flexi {
   display: flex;
@@ -32,6 +61,7 @@ img {
 #section2 {
   background-color: #dd05e6;
   height: 200px;
+  padding: 20px 20px;
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
 }
 
@@ -66,6 +96,9 @@ img {
   display: inline-block;
   font-size: 20px;
   margin: 3px;
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 footer {
@@ -90,4 +123,7 @@ header {
   display: inline-block;
   font-size: 20px;
   margin: 3px;
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
