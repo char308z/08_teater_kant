@@ -26,8 +26,10 @@ h3 {
 
 h4 {
   font-family: balboa-condensed, sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   font-style: normal;
+  letter-spacing: 0.1px;
+  font-size: 30px;
 }
 p {
   font-family: balboa-condensed, sans-serif;
@@ -145,6 +147,11 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 40px;
+}
+
+.somelogo a {
+  scale: 220%;
 }
 
 .ikoner {
@@ -175,10 +182,13 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 3px;
+  margin-top: 4px;
   font-family: balboa-condensed, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.footer-col1 {
+  margin-left: 20px;
 }
 
 .footer-col2 {
@@ -186,16 +196,16 @@ header {
 }
 
 .footer-col3 {
-  margin-left: 60px;
+  margin-left: 180px;
 }
-
+.mail {
+  padding-top: 10px;
+}
 .fa {
-  padding: 20px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
 }
 
 .fa:hover {
@@ -203,17 +213,17 @@ header {
 }
 
 .fa-facebook {
-  background: #3b5998;
+  background: #fd673a;
   color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
+  background: #fd673a;
   color: white;
 }
 
 .fa-instagram {
-  background: #125688;
+  background: #fd673a;
   color: white;
 }
 
@@ -264,12 +274,14 @@ footer {
   .footer-col1 {
     text-align: center;
     padding-bottom: 10px;
+    margin-left: 0;
   }
 
   .footer-col3 {
     text-align: center;
     padding-top: 10px;
     margin-left: 0;
+    margin-top: 10px;
   }
 
   #section2 {
@@ -292,5 +304,17 @@ footer {
     width: 250px;
     filter: drop-shadow(6px 6px 6px #4a074d);
     padding-left: 0;
+  }
+
+  .somelogo {
+    margin-top: 20px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+  .bekraeft_knap {
+    font-size: 15px;
+    letter-spacing: 0.1px;
   }
 }
