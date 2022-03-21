@@ -35,6 +35,18 @@ p {
   letter-spacing: 0.3px;
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  place-items: center;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  place-items: center;
+}
 .flexi {
   display: flex;
   list-style: none;
