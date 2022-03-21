@@ -6,9 +6,37 @@ img {
   width: 100%;
 }
 
-header {
+.flexi {
   display: flex;
-  justify-content: space-between;
+  list-style: none;
+  justify-content: right;
+}
+
+#logo {
+  width: 200px;
+  padding: 20px;
+}
+
+.skiftfarvelogo {
+  fill: #fd673a;
+  cursor: pointer;
+}
+.skiftfarvelogo:hover {
+  fill: white;
+}
+
+#section1 {
+  box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+}
+
+#section2 {
+  background-color: #dd05e6;
+  height: 200px;
+  box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+}
+
+.textlængde {
+  max-width: 60ch;
 }
 
 #splash {
@@ -16,4 +44,50 @@ header {
   background-size: cover;
   height: 100vh;
   width: 100%;
+}
+
+.somelogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ikoner {
+  width: 60px;
+}
+
+.bekraeft_knap {
+  background-color: #49024c;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px;
+}
+
+footer {
+  background-color: #fd673a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+}
+
+header {
+  background-color: #49024c;
+}
+
+.button {
+  background-color: #fd673a;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px;
 }
