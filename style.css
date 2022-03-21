@@ -13,8 +13,9 @@ h1 {
 
 h2 {
   font-family: balboa-condensed, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  font-size: 100px;
 }
 
 h3 {
@@ -72,13 +73,17 @@ header {
 
 #section2 {
   background-color: #840489;
-  height: 200px;
-  padding: 20px 20px;
+  height: 600px;
+  padding: 50px 50px;
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .textlængde {
   max-width: 60ch;
+  color: whitesmoke;
 }
 
 #splash {
@@ -104,6 +109,21 @@ header {
 .ikoner {
   width: 60px;
 }
+.medlemskort {
+  margin-left: 50px;
+}
+
+.medlemskortbilled {
+  width: 300px;
+  filter: drop-shadow(6px 6px 6px #4a074d);
+  padding-left: 60px;
+}
+
+.hvadfårdu {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 50px;
+}
 
 .bekraeft_knap {
   background-color: #49024c;
@@ -122,6 +142,10 @@ header {
 
 .footer-col2 {
   text-align: center;
+}
+
+.footer-col3 {
+  margin-left: 60px;
 }
 
 .fa {
@@ -180,6 +204,36 @@ footer {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-family: balboa-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: balboa-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+  }
+
+  h3 {
+    font-family: balboa-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h4 {
+    font-family: balboa-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  p {
+    font-family: balboa-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.3px;
+  }
   footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -193,5 +247,28 @@ footer {
   .footer-col3 {
     text-align: center;
     padding-top: 10px;
+    margin-left: 0;
+  }
+
+  #section2 {
+    height: 600px;
+    padding: 50px 50px;
+    box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hvadfårdu {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+
+  .medlemskortbilled {
+    width: 250px;
+    filter: drop-shadow(6px 6px 6px #4a074d);
+    padding-left: 0;
   }
 }
