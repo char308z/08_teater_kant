@@ -214,19 +214,66 @@ header {
 }
 
 .læsmereknap {
-  background-color: #49024c;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-top: 4px;
-  font-family: balboa-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  border: 3px solid #fd673a;
+  color: transparent;
+  padding: 8px 10px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+  margin-top: 10px;
 }
+.læsmereknap:before {
+  content: "LÆS MERE";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fd673a;
+  background: #49024c;
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.læsmereknap:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.læsmereknap:after {
+  content: "LÆS MERE";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fd673a;
+  background: #49024c;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.læsmereknap:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
 .footer-col1 {
   margin-left: 20px;
 }
