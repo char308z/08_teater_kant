@@ -128,7 +128,7 @@ header {
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   background-image: url("bg_section2.jpg");
   background-size: cover;
 }
@@ -179,7 +179,7 @@ header {
 .medlemskort {
   margin-left: 50px;
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 2/3;
   z-index: 1;
 }
 
@@ -193,7 +193,7 @@ header {
 
 .hvadfårdu {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3/4;
   margin-left: 50px;
   z-index: 1;
 }
