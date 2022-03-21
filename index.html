@@ -56,11 +56,12 @@
         <div class="hvadfårdu">
           <h2>Hvad får du?</h2>
           <p class="textlængde">
-            Som medlem af Teater KANT betaler du et hvis beløb om måneden og
-            dertil kan du så se alle shows som vises i teateret. Dertil får du
-            også 10% rabat i baren og hvis du invitere en bekendt med får de 10%
-            af deres billet.
+            Som medlem af Teater KANT får du uvurdelige oplevelser for for
+            penge. Med et medlemskort betaler du 50kr om måneden. Dertil kan du
+            så se alle shows som vises i teateret. Du får du 10% rabat i baren
+            og hvis du invitere en bekendt med får de 10% af deres billet.
           </p>
+          <button class="læsmereknap">LÆS MERE..</button>
         </div>
         <div class="overlay"></div>
       </section>
@@ -169,14 +170,18 @@
       /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
       btn.addEventListener("click", toggleMenu);
 
+      //funtion for at billede kommer frem fra bunden når man scroller
       function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-
+        //targeting alle reveal elementer ved querySelectorAll
+        let reveals = document.querySelectorAll(".reveal");
+        //scrolling animation skal affyres når den kommer til syne.
+        //"getBoundingClientRect().top" giver distancen fra toppen af viewporten og window.innerHeight giver højten af viewport.
+        //windowHeight er height af viewporten, elementTop er distancen af reveal element fra toopen af viewpoint eller, længden som man har scrollet, og elementVisible er height som er det element som skal vises til brugeren.
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 150;
+          //ved at tilføje(add) og fjerne(remove) den active class. bruger vi "if og else" statements. De vil afgøre når animation affyres.
           if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
           } else {
@@ -184,6 +189,7 @@
           }
         }
       }
+      //eventlisterner er tilføjet så den kommer frem hvergang man scroller ned til billedet.
       window.addEventListener("scroll", reveal);
     </script>
   </body>

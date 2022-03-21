@@ -188,6 +188,7 @@ header {
   filter: drop-shadow(6px 6px 6px #4a074d);
   padding-left: 60px;
   z-index: 1;
+  margin: 15px;
 }
 
 .hvadfårdu {
@@ -198,6 +199,21 @@ header {
 }
 
 .bekraeft_knap {
+  background-color: #49024c;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 4px;
+  font-family: balboa-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.læsmereknap {
   background-color: #49024c;
   border: none;
   color: white;
