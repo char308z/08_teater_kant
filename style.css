@@ -134,7 +134,7 @@ header {
 }
 
 .overlay {
-  background-color: #7f1a8275;
+  background-color: #9e3aa175;
   grid-column: 1 / span 3;
   grid-row: 1 / span 3;
   z-index: 0;
@@ -185,9 +185,9 @@ header {
 
 .medlemskortbilled {
   width: 300px;
-  filter: drop-shadow(6px 6px 6px #4a074d);
+  filter: drop-shadow(6px 6px 6px #210233);
   padding-left: 60px;
-  z-index: 1;
+  z-index: 2;
   margin: 15px;
 }
 
