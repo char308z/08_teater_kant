@@ -41,6 +41,36 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   place-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #49024c;
+  z-index: 2;
+}
+
+.nocolor {
+  background-color: unset;
+  transition: 0.5s;
+}
+
+.button {
+  background-color: #fd673a;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 3px;
+  font-family: balboa-condensed, sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.nocolor li a {
+  background-color: unset;
+  color: #fd673a;
+  transition: 0.5s;
 }
 
 #menu {
@@ -52,11 +82,12 @@ header {
   display: flex;
   list-style: none;
   justify-content: right;
+  gap: 20px;
 }
 
 #logo {
-  width: 200px;
-  padding: 20px;
+  width: 150px;
+  padding: 10px;
 }
 
 .skiftfarvelogo {
@@ -69,6 +100,15 @@ header {
 
 #section1 {
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
+}
+
+#kant_splash {
+  font-size: 200px;
+  color: #fd673a;
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  text-transform: uppercase;
 }
 
 #section2 {
@@ -98,6 +138,7 @@ header {
   filter: blur(3px);
   filter: grayscale(1);
   filter: saturate(2.2);
+  position: absolute;
 }
 
 .somelogo {
@@ -174,25 +215,6 @@ header {
 .fa-instagram {
   background: #125688;
   color: white;
-}
-
-header {
-  background-color: #49024c;
-}
-
-.button {
-  background-color: #fd673a;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 3px;
-  font-family: balboa-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 footer {
