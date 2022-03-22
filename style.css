@@ -33,10 +33,10 @@ h4 {
 }
 p {
   font-family: balboa-condensed, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
-  font-size: 17px;
-  letter-spacing: 0.3px;
+  font-size: 18px;
+  letter-spacing: 0.4px;
 }
 
 body {
@@ -74,6 +74,11 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+.button:hover {
+  opacity: 0.8;
+  border: 1.5px solid black;
+}
 .nocolor li a {
   background-color: unset;
   color: #fd673a;
@@ -106,6 +111,10 @@ header {
   cursor: pointer;
 }
 .skiftfarvelogo:hover {
+  opacity: 0.8;
+}
+
+.skiftfarvelogo:hover {
   fill: white;
 }
 
@@ -124,7 +133,6 @@ header {
 
 #section2 {
   /* height: 600px; */
-
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,19 +185,18 @@ header {
   width: 60px;
 }
 .medlemskort {
-  margin-left: 50px;
+  margin-left: 80px;
   grid-column: 1/2;
   grid-row: 2/3;
   z-index: 1;
-  margin-top: 50px;
 }
 
 .medlemskortbilled {
-  width: 300px;
+  width: 500px;
   filter: drop-shadow(6px 6px 6px #210233);
-  padding-left: 60px;
+  padding-left: 30px;
   z-index: 2;
-  margin: 15px;
+  margin: 10px;
 }
 
 .hvadfårdu {
@@ -214,17 +221,22 @@ header {
   font-style: normal;
 }
 
+.bekraeft_knap:hover {
+  opacity: 0.8;
+  border: 1.5px solid black;
+}
+
 .læsmereknap {
   text-decoration: none;
   border: 3px solid #fd673a;
   color: transparent;
   padding: 8px 10px;
-  font-size: 28px;
+  font-size: 20px;
   font-family: sans-serif;
   letter-spacing: 5px;
   transition: all 0.5s;
   position: relative;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .læsmereknap:before {
   content: "LÆS MERE";
@@ -233,7 +245,7 @@ header {
   align-items: center;
   color: #fd673a;
   background: #49024c;
-  font-size: 28px;
+  font-size: 20px;
   top: 0;
   left: 100%;
   font-family: sans-serif;
@@ -343,6 +355,17 @@ footer {
   opacity: 1;
 }
 
+/* #popup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4%;
+  width: 20vw;
+  padding: 1% 2% 3% 2%;
+  object-fit: contain;
+  background-color: #fff8dc;
+  place-self: center;
+} */
+
 @media (max-width: 600px) {
   h1 {
     font-family: balboa-condensed, sans-serif;
@@ -405,11 +428,32 @@ footer {
     margin-left: 50px;
     padding-top: 20px;
   }
+  .medlemskort {
+    padding-top: 25px;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 60px;
+  }
 
   .medlemskortbilled {
-    width: 250px;
+    width: 200px;
     filter: drop-shadow(6px 6px 6px #4a074d);
     padding-left: 0;
+  }
+
+  #kant_splash {
+    font-size: 120px;
+    top: 80%;
+  }
+
+  .textlængde {
+    max-width: 40ch;
+    color: whitesmoke;
+    padding-right: 10px;
+  }
+
+  .læsmereknap {
+    margin-bottom: 10px;
   }
 
   /* burgermenu */
@@ -491,5 +535,11 @@ footer {
   .bekraeft_knap {
     font-size: 15px;
     letter-spacing: 0.1px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #kant_splash {
+    font-size: 100px;
+    top: 85%;
   }
 }
