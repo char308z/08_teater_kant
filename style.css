@@ -156,10 +156,14 @@ header {
   color: whitesmoke;
   border: 3px solid #fd673a;
   padding: 1%;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .stroke {
-  filter: drop-shadow(2px 2px 2px #fd673a);
+  filter: drop-shadow(2px 2px 2px black);
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+  color: #fd673a;
 }
 
 #splash {
@@ -252,6 +256,7 @@ at der er blevet tilføjet en skygge til billedet. */
   transition: all 0.5s;
   position: relative;
   margin-top: 15px;
+  filter: drop-shadow(2px 2px 2px black);
 }
 .læsmereknap:before {
   content: "LÆS MERE";
@@ -312,6 +317,10 @@ at der er blevet tilføjet en skygge til billedet. */
 
 .footer-col3 {
   margin-left: 180px;
+}
+
+.strokefoot {
+  filter: drop-shadow(0.4px 0.4px 0.4px rgb(70, 69, 69));
 }
 .mail {
   padding-top: 10px;
