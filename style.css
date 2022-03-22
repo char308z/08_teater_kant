@@ -99,6 +99,7 @@ header {
   list-style: none;
   justify-content: right;
   gap: 20px;
+  padding-right: 20px;
 }
 
 #logo {
