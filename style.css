@@ -320,7 +320,7 @@ at der er blevet tilføjet en skygge til billedet. */
 }
 
 .strokefoot {
-  filter: drop-shadow(0.4px 0.4px 0.4px rgb(70, 69, 69));
+  filter: drop-shadow(0.3px 0.3px 0.3px rgb(70, 69, 69));
 }
 .mail {
   padding-top: 10px;
