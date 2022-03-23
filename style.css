@@ -185,7 +185,7 @@ header {
 #splash {
   background-image: url("splash.jpg");
   background-size: cover;
-  height: 100%;
+  height: 90%;
   width: 100%;
   object-fit: cover;
 }
@@ -210,7 +210,7 @@ video {
 }
 
 .somelogo a {
-  scale: 220%;
+  font-size: 2.5rem;
 }
 
 .ikoner {
@@ -441,6 +441,8 @@ ul {
   font-style: normal;
   letter-spacing: 0.3px;
   color: white;
+  display: grid;
+  gap: 20px;
 }
 .indhold_1 {
   display: grid;
@@ -569,7 +571,7 @@ ul {
   .læsmereknap {
     margin-bottom: 10px;
     font-size: 15px;
-    padding: 8psx 10px;
+    padding: 8px 10px;
   }
 
   /* burgermenu */
@@ -657,7 +659,7 @@ ul {
     height: 100%;
   }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   #kant_splash {
     font-size: 100px;
     top: 85%;
@@ -666,4 +668,4 @@ ul {
     width: 100%;
     height: 100%;
   }
-}
+} */
