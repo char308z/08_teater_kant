@@ -36,7 +36,7 @@
             src="http://andreaseneberg.dk/kea/2.semester/8_brugercentreretdesign/lang_video.mp4"
           ></video>
         </div>
-        <div id="kant_splash">
+        <div class="kant_splash">
           <h1>kant</h1>
         </div>
       </section>
@@ -165,8 +165,10 @@
       function navColor() {
         if (window.scrollY > 0) {
           document.querySelector("header").classList.remove("nocolor");
+          document.querySelector(".kant_splash").classList.add("white");
         } else {
           document.querySelector("header").classList.add("nocolor");
+          document.querySelector(".kant_splash").classList.remove("white");
         }
       }
 

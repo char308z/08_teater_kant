@@ -133,13 +133,18 @@ header {
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
 }
 
-#kant_splash {
+.kant_splash {
   font-size: 200px;
   color: #fd673a;
   position: absolute;
   z-index: 2;
   top: 70%;
   text-transform: uppercase;
+}
+
+.white {
+  color: aliceblue;
+  transition: 200ms;
 }
 
 #section2 {
