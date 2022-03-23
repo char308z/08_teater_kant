@@ -15,8 +15,10 @@ h2 {
   font-family: balboa-condensed, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 100px;
+  font-size: 65px;
   color: aliceblue;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 h3 {
@@ -41,6 +43,8 @@ p {
   font-style: normal;
   font-size: 1rem;
   letter-spacing: 0.4px;
+  margin-left: 2%;
+  color: aliceblue;
 }
 
 body {
@@ -83,6 +87,20 @@ header {
   opacity: 0.8;
   /* border: 1.5px solid black; */
 }
+
+.header_knap {
+  border: none;
+  color: #fd673a;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px;
+  font-family: balboa-condensed, sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .nocolor li a {
   background-color: unset;
   color: #fd673a;
@@ -109,18 +127,6 @@ header {
 #logo {
   width: 150px;
   padding: 10px;
-}
-
-.skiftfarvelogo {
-  fill: #fd673a;
-  cursor: pointer;
-}
-.skiftfarvelogo:hover {
-  opacity: 0.8;
-}
-
-.skiftfarvelogo:hover {
-  fill: white;
 }
 
 #section1 {
@@ -212,10 +218,11 @@ at der er blevet tilføjet en skygge til billedet. */
 }
 
 .hvadfårdu {
-  grid-column: 2;
+  grid-column: 1/2;
   grid-row: 3/4;
   margin-left: 50px;
   z-index: 1;
+  margin-top: 4%;
 }
 
 .bekraeft_knap {
@@ -316,6 +323,10 @@ at der er blevet tilføjet en skygge til billedet. */
 .forstilling img {
   height: 200px;
   object-fit: cover;
+  transition: transform 1s ease;
+}
+.forstilling img:hover {
+  transform: scale(1.05);
 }
 
 .forstilling a {
@@ -376,7 +387,7 @@ footer {
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0.3px;
-  color: black;
+  color: aliceblue;
 }
 
 .reveal {
