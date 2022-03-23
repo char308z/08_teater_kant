@@ -183,8 +183,6 @@ header {
 }
 
 #splash {
-  background-image: url("splash.jpg");
-  background-size: cover;
   height: 90%;
   width: 100%;
   object-fit: cover;
