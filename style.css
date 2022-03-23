@@ -7,8 +7,10 @@ img {
 }
 h1 {
   font-family: balboa-condensed, sans-serif;
-  font-weight: 400;
+  /* font-weight: 700; */
   font-style: normal;
+  font-size: 5rem;
+  color: #fd673a;
 }
 
 h2 {
@@ -19,6 +21,7 @@ h2 {
   color: aliceblue;
   margin-left: 2%;
   margin-bottom: 2%;
+  color: #fd673a;
 }
 
 h3 {
@@ -26,6 +29,7 @@ h3 {
   font-style: normal;
   font-size: 1.5rem;
   color: aliceblue;
+  /* color: #fd673a; */
 }
 
 h4 {
@@ -35,6 +39,13 @@ h4 {
   letter-spacing: 0.1px;
   font-size: 1.5rem;
   color: aliceblue;
+}
+
+h5 {
+  font-family: balboa-condensed, sans-serif;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #fd673a;
 }
 
 p {
@@ -110,6 +121,7 @@ header {
   /* display: flex; */
   list-style: none;
   place-items: center;
+  margin-right: 2%;
 }
 
 .toggle-btn {
@@ -152,7 +164,7 @@ header {
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   background-image: url("bg.jpg");
   background-size: cover;
 }
@@ -173,7 +185,7 @@ header {
 #splash {
   background-image: url("splash.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -430,12 +442,24 @@ ul {
   letter-spacing: 0.3px;
   color: white;
 }
-.indhold {
+.indhold_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4%;
   gap: 21px;
   max-width: 148ch;
+}
+.indhold_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4%;
+  gap: 21px;
+  max-width: 148ch;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.overskrifter {
+  margin-top: 3%;
 }
 @media (max-width: 600px) {
   h1 {
@@ -456,6 +480,7 @@ ul {
     font-weight: 400;
     font-size: 1.5rem;
     font-style: normal;
+    /* color: #fd673a; */
   }
 
   h4 {
@@ -468,13 +493,19 @@ ul {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.3px;
+    line-height: 2rem;
   }
   .tekst {
     margin-bottom: 10%;
     max-width: 55ch;
     margin-top: 3%;
   }
-  .indhold {
+  .indhold_1 {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .indhold_2 {
     margin-left: 5%;
     display: grid;
     grid-template-columns: 1fr;
@@ -508,7 +539,6 @@ ul {
     grid-column: 1;
     grid-row: 2;
     margin-left: 2%;
-    padding-top: 20px;
   }
   .medlemskort {
     padding-top: 25px;
@@ -518,7 +548,7 @@ ul {
   }
 
   .medlemskortbilled {
-    width: 200px;
+    width: 300px;
     filter: drop-shadow(6px 6px 6px #4a074d);
     padding-left: 0;
   }
@@ -616,16 +646,24 @@ ul {
   }
 
   .button {
-    font-size: 80px;
+    /* font-size: 80px; */
   }
   .bekraeft_knap {
     font-size: 15px;
     letter-spacing: 0.1px;
+  }
+  #splash {
+    width: 100%;
+    height: 100%;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   #kant_splash {
     font-size: 100px;
     top: 85%;
+  }
+  #splash {
+    width: 100%;
+    height: 100%;
   }
 }
