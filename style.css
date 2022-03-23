@@ -178,12 +178,13 @@ header {
   object-fit: cover;
 }
 .splashvideo {
-  height: 100vh;
-  width: 100%;
   filter: blur(3px);
   filter: grayscale(1);
   filter: saturate(2.2);
   position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .somelogo {
