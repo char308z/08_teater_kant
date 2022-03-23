@@ -175,6 +175,7 @@ header {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  object-fit: cover;
 }
 .splashvideo {
   height: 100vh;
